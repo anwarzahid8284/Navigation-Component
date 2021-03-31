@@ -7,10 +7,11 @@
     tools:context=".HomeFragment">
 
     <TextView
-        android:id="@+id/textID"
+        android:id="@+id/homeScreenTextID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
+        android:text="Home Screen"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,10 +19,11 @@
 
     <Button
         android:id="@+id/buttonID"
-        android:text="Next Fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textID" />
+        app:layout_constraintTop_toBottomOf="@id/homeScreenTextID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

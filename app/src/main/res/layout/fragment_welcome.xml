@@ -4,34 +4,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tool="http://schemas.android.com/tools"
-    tool:context=".SecondFragment">
-    <EditText
-        android:id="@+id/secondFragment_userNameID"
+    tool:context=".WelcomeFragment">
+
+    <TextView
+        android:id="@+id/welcomeFragment_LoggedInID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter userName"
-        android:inputType="textEmailAddress"
+        android:text="Logged in"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <EditText
-        android:id="@+id/secondFragment_userPasswordID"
+
+    <TextView
+        android:id="@+id/welcomeFragment_GetUserNameID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter Password"
+        android:layout_marginTop="10dp"
+        android:text="knowledgeforyou@gmail.com"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondFragment_userNameID" />
+        app:layout_constraintTop_toBottomOf="@id/welcomeFragment_LoggedInID" />
 
+    <TextView
+        android:id="@+id/welcomeFragment_GetPasswordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Passwrod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeFragment_GetUserNameID" />
 
     <Button
-        android:id="@+id/loginBtnID"
-        android:text="Login"
+        android:id="@+id/welcomeFragment_OkBtnID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Ok"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondFragment_userPasswordID" />
+        app:layout_constraintTop_toBottomOf="@id/welcomeFragment_GetPasswordID" />
 </androidx.constraintlayout.widget.ConstraintLayout>
