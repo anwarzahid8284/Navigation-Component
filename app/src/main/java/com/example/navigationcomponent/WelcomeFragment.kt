@@ -11,9 +11,9 @@ class WelcomeFragment:Fragment(R.layout.fragment_welcome) {
     private val args:WelcomeFragmentArgs by navArgs()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        welcomeFragment_GetUserNameID.text=args.userName
+        welcomeFragment_GetPasswordID.text=args.userPassword
         welcomeFragment_OkBtnID.setOnClickListener{
-            welcomeFragment_GetUserNameID.text=args.userName
-            welcomeFragment_GetPasswordID.text=args.userPassword
             val action=WelcomeFragmentDirections.actionWelcomeFragmentToHomeFragment()
             findNavController().navigate(action)
         }

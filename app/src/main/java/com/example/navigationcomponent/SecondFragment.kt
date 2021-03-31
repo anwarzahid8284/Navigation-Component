@@ -10,8 +10,8 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loginBtnID.setOnClickListener{
-            var userName:String=secondFragment_userNameID.text.toString().trim()
-            var userPassword:String=secondFragment_userPasswordID.text.toString().trim()
+            val userName:String=secondFragment_userNameID.text.toString().trim()
+            val userPassword:String=secondFragment_userPasswordID.text.toString().trim()
             val action=SecondFragmentDirections.actionSecondFragmentToWelcomeFragment(userName,userPassword)
             findNavController().navigate(action)
         }
