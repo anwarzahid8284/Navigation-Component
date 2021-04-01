@@ -12,6 +12,7 @@ class HomeFragment:Fragment(R.layout.fragment_home) {
         buttonID.setOnClickListener {
             val action=HomeFragmentDirections.actionHomeFragmentToSecondFragment()
             findNavController().navigate(action)
+
         }
     }
 }

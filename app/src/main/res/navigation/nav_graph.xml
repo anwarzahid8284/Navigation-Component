@@ -13,10 +13,10 @@
         <action
             android:id="@+id/action_homeFragment_to_secondFragment"
             app:destination="@id/secondFragment"
-            app:enterAnim="@menu/slide_in_right"
-            app:exitAnim="@menu/slide_out_left"
-            app:popEnterAnim="@menu/slide_in_left"
-            app:popExitAnim="@menu/slide_out_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -26,10 +26,10 @@
         <action
             android:id="@+id/action_secondFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
-            app:enterAnim="@menu/slide_in_right"
-            app:exitAnim="@menu/slide_out_left"
-            app:popEnterAnim="@menu/slide_in_left"
-            app:popExitAnim="@menu/slide_out_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -48,4 +48,21 @@
             android:name="userPassword"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.navigationcomponent.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/conditionFragment"
+        android:name="com.example.navigationcomponent.ConditionFragment"
+        android:label="fragment_term_and_condition"
+        tools:layout="@layout/fragment_term_and_condition" />
+    <action
+        android:id="@+id/action_global_conditionFragment"
+        app:destination="@id/conditionFragment"
+        app:enterAnim="@anim/slide_in_top"
+        app:exitAnim="@anim/slide_out_bottom"
+        app:popEnterAnim="@anim/slide_in_bottom"
+        app:popExitAnim="@anim/slide_out_top" />
 </navigation>
